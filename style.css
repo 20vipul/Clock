@@ -1,0 +1,66 @@
+body{
+    background-color: antiquewhite;
+}
+#main-container {
+    background-color: bisque;
+    border: 10px solid black;
+    border-radius: 50%;
+    width: 600px;
+}
+
+#ClockContainer {
+    background-size: 100%;
+    margin: auto;
+    width: 200px;
+    /* Set width and height of ClockContainer */
+    height: 200px;
+    position: relative;
+    /* Make ClockContainer a positioning context */
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.3%;
+    height: 35%;
+    top: 20.5%; /* Adjust top and left values to center the hour hand */
+    left: 49%;
+}
+
+#minute {
+    width: 0.8%;
+    height: 50%;
+    top: 6%;/* Adjust top and left values to center the minute hand */
+    left: 49%;
+}
+
+#second {
+    width: 0.5%;
+    height: 60%;
+    top: -8px;/* Adjust top and left values to center the second hand */
+    left: 49%;
+}
+
+.row {
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 600px;
+}
+
+.col {
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 200px;
+    display: flex; /* Add display flex to center content */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem; /* Adjust font size for clock numbers */
+}
+
